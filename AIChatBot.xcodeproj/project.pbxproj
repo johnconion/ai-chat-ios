@@ -17,7 +17,7 @@
 		7C9F12D929C36CD90013F39E /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12D829C36CD90013F39E /* BaseRequest.swift */; };
 		7C9F12DB29C36D070013F39E /* PostAngouRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DA29C36D070013F39E /* PostAngouRequest.swift */; };
 		7C9F12DD29C36D660013F39E /* AngouResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DC29C36D660013F39E /* AngouResponse.swift */; };
-		7C9F12DF29C36EB40013F39E /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DE29C36EB40013F39E /* SampleViewModel.swift */; };
+		7C9F12DF29C36EB40013F39E /* HogeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DE29C36EB40013F39E /* HogeViewModel.swift */; };
 		7C9F12E129C36F350013F39E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E029C36F350013F39E /* BaseViewModel.swift */; };
 		7C9F12E329C385530013F39E /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E229C385530013F39E /* ApiError.swift */; };
 		7C9F12E529C388BD0013F39E /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */; };
@@ -39,7 +39,7 @@
 		7C9F12D829C36CD90013F39E /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		7C9F12DA29C36D070013F39E /* PostAngouRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAngouRequest.swift; sourceTree = "<group>"; };
 		7C9F12DC29C36D660013F39E /* AngouResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngouResponse.swift; sourceTree = "<group>"; };
-		7C9F12DE29C36EB40013F39E /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
+		7C9F12DE29C36EB40013F39E /* HogeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogeViewModel.swift; sourceTree = "<group>"; };
 		7C9F12E029C36F350013F39E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7C9F12E229C385530013F39E /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorResponse.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				7C9F12E029C36F350013F39E /* BaseViewModel.swift */,
-				7C9F12DE29C36EB40013F39E /* SampleViewModel.swift */,
+				7C9F12DE29C36EB40013F39E /* HogeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 				7C9F12E529C388BD0013F39E /* ApiErrorResponse.swift in Sources */,
 				7C9F12E129C36F350013F39E /* BaseViewModel.swift in Sources */,
 				7C9F12C529C36BCB0013F39E /* SceneDelegate.swift in Sources */,
-				7C9F12DF29C36EB40013F39E /* SampleViewModel.swift in Sources */,
+				7C9F12DF29C36EB40013F39E /* HogeViewModel.swift in Sources */,
 				7C9F12F129C453320013F39E /* Extensons.swift in Sources */,
 				7C9F12D729C36C9E0013F39E /* ApiClient.swift in Sources */,
 			);

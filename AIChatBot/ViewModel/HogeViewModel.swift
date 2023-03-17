@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-final class SampleViewModel: BaseViewModel {
+final class HogeViewModel: BaseViewModel {
     
     private let repository = AngouRepository()
     

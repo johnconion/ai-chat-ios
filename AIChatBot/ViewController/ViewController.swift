@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: BaseViewController {
     
-    private let viewModel = SampleViewModel()
+    private let viewModel = HogeViewModel()
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var inputTextView: UITextView!
