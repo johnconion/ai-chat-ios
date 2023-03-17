@@ -11,7 +11,7 @@ class ViewController: BaseViewController {
     
     private let viewModel = SampleViewModel()
     
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var inputTextView: UITextView!
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ViewController: BaseViewController {
     override func subscribeValues() {
         super.subscribeValues()
         viewModel.$encryptedString
-            .assignOnMainThread(to: \.text, on: testLabel)
+            .assignOnMainThread(to: \.text, on: resultLabel)
             .disposed(by:self)
     }
 

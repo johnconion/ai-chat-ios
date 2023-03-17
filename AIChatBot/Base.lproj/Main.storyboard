@@ -61,7 +61,7 @@
                     </view>
                     <connections>
                         <outlet property="inputTextView" destination="n4l-45-Dn6" id="TS5-6d-6JL"/>
-                        <outlet property="testLabel" destination="IYb-gP-et6" id="YZb-cO-DnK"/>
+                        <outlet property="resultLabel" destination="IYb-gP-et6" id="YZb-cO-DnK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
