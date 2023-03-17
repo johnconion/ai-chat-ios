@@ -20,7 +20,6 @@ class BaseViewController: UIViewController, BaseViewProtocol {
         super.viewDidLoad()
         print("\(className): viewDidLoad()")
         subscribeValues()
-        fetch()
     }
     
     func subscribeValues() {

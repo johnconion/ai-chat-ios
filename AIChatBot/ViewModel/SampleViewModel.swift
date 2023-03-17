@@ -13,14 +13,13 @@ final class SampleViewModel: BaseViewModel {
     private let repository = AngouRepository()
     
     @Published
-    private(set) var address: String = "取得中"
+    private(set) var encryptedString: String = "Result"
     
-    func fetch() {
+    func fetch(inputString: String) {
         Task.detached {
-            self.address = "WASSA"
             do {
                 // bind to Published params
-                self.address = try await self.repository.encrypt(input: "TestTest", encryptKey: "danjs82")
+                self.encryptedString = try await self.repository.encrypt(input: inputString, encryptKey: "danjs82")
             } catch(let error) {
                 switch(error){
                 default: print(error)
