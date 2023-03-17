@@ -22,7 +22,10 @@ enum ApiError: Error {
     
     static func map(_ statusCode: Int, data: Data) throws -> ApiError {
         print("↓--API ERROR--↓")
-        print("statusCode:\(statusCode)")
+        print("statusCode: \(statusCode)")
+        if let data = String(data: data, encoding: .utf8){
+            print("data: " + data)
+        }
         let response = try decoder.decode(ApiErrorResponse.self, from: data)
         print("reason:" + response.reason)
         print("description:" + response.description)

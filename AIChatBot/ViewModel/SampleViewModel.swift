@@ -17,12 +17,13 @@ final class SampleViewModel: BaseViewModel {
         Task.detached {
             self.address = "WASSA"
             do {
-                let request = HogeRequest()
+                let request = PostAngouRequest(inputString: "Test", encryptKey: "WASSA")
                 let result = try await ApiClient.request(request)
                 // bind to Published params
+                self.address = result.output
             } catch(let error) {
                 switch(error){
-                default: print("error")
+                default: print(error)
                 }
             }
         }

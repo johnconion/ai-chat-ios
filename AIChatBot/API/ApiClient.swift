@@ -10,7 +10,6 @@ import Combine
 
 final class ApiClient {
     
-    private static let contentType = "application/json"
     private static let decoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -31,9 +30,13 @@ final class ApiClient {
     // SwiftConcurrency
     static func request<T, V>(_ request: T) async throws -> V where T: BaseRequest, V: Codable, T.ResponseType == V {
         let urlRequest = try! request.asURLRequest()
+        print("Request: " + urlRequest.url!.absoluteString)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
         guard let response = response as? HTTPURLResponse else { throw ApiError.notHttpUrlResponse }
         guard response.statusCode == 200 else { throw try ApiError.map(response.statusCode, data: data) }
+        if let data = String(data: data, encoding: .utf8) {
+            print("data: " + data)
+        }
         let value = try ApiClient.decoder.decode(V.self, from: data)
         return value
     }
