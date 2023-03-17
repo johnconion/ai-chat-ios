@@ -23,6 +23,7 @@
 		7C9F12E529C388BD0013F39E /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */; };
 		7C9F12EE29C44CF90013F39E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12ED29C44CF90013F39E /* BaseViewController.swift */; };
 		7C9F12F129C453320013F39E /* Extensons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12F029C453320013F39E /* Extensons.swift */; };
+		7C9F12F329C49DAE0013F39E /* AngouRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12F229C49DAE0013F39E /* AngouRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorResponse.swift; sourceTree = "<group>"; };
 		7C9F12ED29C44CF90013F39E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7C9F12F029C453320013F39E /* Extensons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensons.swift; sourceTree = "<group>"; };
+		7C9F12F229C49DAE0013F39E /* AngouRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngouRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		7C9F12E929C44B980013F39E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				7C9F12F229C49DAE0013F39E /* AngouRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9F12F329C49DAE0013F39E /* AngouRepository.swift in Sources */,
 				7C9F12DB29C36D070013F39E /* PostAngouRequest.swift in Sources */,
 				7C9F12D929C36CD90013F39E /* BaseRequest.swift in Sources */,
 				7C9F12DD29C36D660013F39E /* AngouResponse.swift in Sources */,
