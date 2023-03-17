@@ -18,12 +18,14 @@ class ViewController: BaseViewController {
     }
     
     override func subscribeValues() {
+        super.subscribeValues()
         viewModel.$address
             .assignOnMainThread(to: \.text, on: testLabel)
             .disposed(by:self)
     }
 
     override func fetch() {
+        super.fetch()
         viewModel.fetch()
     }
     

@@ -19,3 +19,9 @@ extension Published.Publisher where Self.Failure == Never {
         self.map{ $0 }.receive(on: DispatchQueue.main).assign(to: keyPath, on: object)
     }
 }
+
+extension NSObject {
+    var className: String {
+        return String(describing: type(of: self)) // ClassName
+    }
+}

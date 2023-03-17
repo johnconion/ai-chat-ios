@@ -12,10 +12,6 @@ final class SampleViewModel: BaseViewModel {
     
     @Published
     private(set) var address: String = "取得中"
-        
-    override init() {
-        print("SampleViewModel init()")
-    }
     
     func fetch() {
         Task.detached {

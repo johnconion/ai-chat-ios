@@ -8,6 +8,11 @@
 import UIKit
 import Combine
 
-class BaseViewModel {
+class BaseViewModel: NSObject {
     private var cancellables = Set<AnyCancellable>()
+    
+    override init() {
+        super.init()
+        print("\(className): init()")
+    }
 }

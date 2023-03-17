@@ -18,11 +18,18 @@ class BaseViewController: UIViewController, BaseViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\(className): viewDidLoad()")
         subscribeValues()
+        fetch()
     }
     
-    func subscribeValues() {}
-    func fetch() {}
+    func subscribeValues() {
+        print("\(className): subscribeValues()")
+    }
+    
+    func fetch() {
+        print("\(className): fetch()")
+    }
 }
 
 extension AnyCancellable {
