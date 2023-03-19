@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chat_my_message_cell" rowHeight="96" id="KGk-i7-Jjw" customClass="ChatOthersMessageTableViewCell" customModule="AIChatBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VL-Xj-q7n">
+                        <rect key="frame" x="48" y="12" width="260" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-17-Ikp">
+                                <rect key="frame" x="95.333333333333357" y="8" width="156.66666666666663" height="56"/>
+                                <string key="text">こんにちは！
+てかLINEやってる？</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="kJ6-17-Ikp" firstAttribute="top" secondItem="4VL-Xj-q7n" secondAttribute="top" constant="8" id="H9d-bo-cyb"/>
+                            <constraint firstAttribute="bottom" secondItem="kJ6-17-Ikp" secondAttribute="bottom" constant="8" id="RcJ-Cn-sNS"/>
+                            <constraint firstAttribute="trailing" secondItem="kJ6-17-Ikp" secondAttribute="trailing" constant="8" id="gRv-Q7-O37"/>
+                            <constraint firstItem="kJ6-17-Ikp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4VL-Xj-q7n" secondAttribute="leading" constant="8" id="vFc-2j-gDH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:21" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNx-ao-TFt">
+                        <rect key="frame" x="8" y="74" width="32" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4VL-Xj-q7n" firstAttribute="leading" secondItem="eNx-ao-TFt" secondAttribute="trailing" constant="8" id="286-wR-N6X"/>
+                    <constraint firstItem="4VL-Xj-q7n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="3xT-rg-P9h"/>
+                    <constraint firstItem="4VL-Xj-q7n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="ATO-Mq-2FM"/>
+                    <constraint firstAttribute="trailing" secondItem="4VL-Xj-q7n" secondAttribute="trailing" constant="12" id="L2a-rw-0Ro"/>
+                    <constraint firstItem="eNx-ao-TFt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Obn-2b-L9j"/>
+                    <constraint firstItem="eNx-ao-TFt" firstAttribute="bottom" secondItem="4VL-Xj-q7n" secondAttribute="bottom" id="inE-si-ZwS"/>
+                    <constraint firstAttribute="bottom" secondItem="4VL-Xj-q7n" secondAttribute="bottom" constant="12" id="j7A-B8-Po4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="7.6335877862595414" y="-4.2253521126760569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

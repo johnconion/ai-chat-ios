@@ -8,12 +8,12 @@
 import UIKit
 import Combine
 
-final class HogeViewModel: BaseViewModel {
+final class ChatViewModel: BaseViewModel {
     
     private let repository = AngouRepository()
     
     @Published
-    private(set) var encryptedString: String = "Result"
+    private(set) var messageList: [Message] = []
     
     func fetch(inputString: String) {
         Task.detached {
