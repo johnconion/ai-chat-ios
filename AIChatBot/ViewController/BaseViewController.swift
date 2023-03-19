@@ -19,7 +19,12 @@ class BaseViewController: UIViewController, BaseViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\(className): viewDidLoad()")
+        setupLayout()
         subscribeValues()
+    }
+    
+    func setupLayout() {
+        print("\(className): setupLayout()")
     }
     
     func subscribeValues() {

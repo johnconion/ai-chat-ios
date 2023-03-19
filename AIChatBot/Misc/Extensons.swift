@@ -25,3 +25,10 @@ extension NSObject {
         return String(describing: type(of: self)) // ClassName
     }
 }
+
+extension UIView {
+    func clipCorner(radius: CGFloat) {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = radius
+    }
+}

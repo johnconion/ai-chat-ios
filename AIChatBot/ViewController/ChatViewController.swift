@@ -11,23 +11,24 @@ class ChatViewController: BaseViewController {
     
     private let viewModel = HogeViewModel()
     
-    @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var inputMessageTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func subscribeValues() {
         super.subscribeValues()
-        viewModel.$encryptedString
-            .assignOnMainThread(to: \.text, on: resultLabel)
-            .disposed(by:self)
+    }
+    
+    override func setupLayout() {
+        super.setupLayout()
+        inputMessageTextView.clipCorner(radius: 8)
     }
 
     override func fetch() {
         super.fetch()
-        viewModel.fetch(inputString: inputTextView.text)
     }
     
     @IBAction func fetchButton(_ sender: Any) {
