@@ -7,6 +7,10 @@
 
 import UIKit
 
-class ChatUserMessage: NSObject {
-
+struct ChatUserMessage: ChatMessage {
+    let id: UUID
+    let sentDate: Date
+    let timeString: String
+    let sender: ChatSender
+    let messageText: String
 }

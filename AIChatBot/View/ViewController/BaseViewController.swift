@@ -21,6 +21,7 @@ class BaseViewController: UIViewController, BaseViewProtocol {
         print("\(className): viewDidLoad()")
         setupLayout()
         subscribeValues()
+        fetch()
     }
     
     func setupLayout() {

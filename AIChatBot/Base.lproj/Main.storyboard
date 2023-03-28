@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mv5-mH-BaK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mv5-mH-BaK">
                                 <rect key="frame" x="0.0" y="59" width="393" height="639"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -25,19 +25,24 @@
                                 <rect key="frame" x="0.0" y="698" width="393" height="120"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="メッセージ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-8V-kti">
-                                        <rect key="frame" x="12" y="12" width="325" height="96"/>
+                                        <rect key="frame" x="12" y="12" width="321" height="96"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7h-gT-3cx">
-                                        <rect key="frame" x="349" y="8" width="32" height="104"/>
+                                        <rect key="frame" x="341" y="12" width="40" height="96"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="32" id="cef-1v-fpd"/>
+                                            <constraint firstAttribute="width" constant="40" id="cef-1v-fpd"/>
                                         </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" image="paperplane" catalog="system">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </backgroundConfiguration>
                                             <attributedString key="attributedTitle"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
@@ -45,11 +50,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="1Qu-Gc-BEB"/>
                                     <constraint firstAttribute="trailing" secondItem="S7h-gT-3cx" secondAttribute="trailing" constant="12" id="5DH-0M-W5h"/>
-                                    <constraint firstItem="S7h-gT-3cx" firstAttribute="top" secondItem="10s-M5-V8Y" secondAttribute="top" constant="8" id="BHb-yc-Ak1"/>
+                                    <constraint firstItem="S7h-gT-3cx" firstAttribute="top" secondItem="10s-M5-V8Y" secondAttribute="top" constant="12" id="BHb-yc-Ak1"/>
                                     <constraint firstAttribute="bottom" secondItem="OIh-8V-kti" secondAttribute="bottom" constant="12" id="CFj-4y-OYh"/>
-                                    <constraint firstAttribute="bottom" secondItem="S7h-gT-3cx" secondAttribute="bottom" constant="8" id="hvQ-JN-fcI"/>
+                                    <constraint firstAttribute="bottom" secondItem="S7h-gT-3cx" secondAttribute="bottom" constant="12" id="hvQ-JN-fcI"/>
                                     <constraint firstItem="OIh-8V-kti" firstAttribute="top" secondItem="10s-M5-V8Y" secondAttribute="top" constant="12" id="k5r-VQ-7ax"/>
-                                    <constraint firstItem="S7h-gT-3cx" firstAttribute="leading" secondItem="OIh-8V-kti" secondAttribute="trailing" constant="12" id="qHK-Pl-Vnt"/>
+                                    <constraint firstItem="S7h-gT-3cx" firstAttribute="leading" secondItem="OIh-8V-kti" secondAttribute="trailing" constant="8" id="qHK-Pl-Vnt"/>
                                     <constraint firstItem="OIh-8V-kti" firstAttribute="leading" secondItem="10s-M5-V8Y" secondAttribute="leading" constant="12" id="vEs-jc-wnN"/>
                                 </constraints>
                             </view>
@@ -68,6 +73,8 @@
                     </view>
                     <connections>
                         <outlet property="inputMessageTextView" destination="OIh-8V-kti" id="HjZ-fH-FAL"/>
+                        <outlet property="messageTableVeiw" destination="Mv5-mH-BaK" id="EWJ-6u-JCb"/>
+                        <outlet property="sendButton" destination="S7h-gT-3cx" id="yxf-o8-sFa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,6 +92,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

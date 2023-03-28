@@ -1,5 +1,5 @@
 //
-//  ChatMessage.swift
+//  Sender.swift
 //  AIChatBot
 //
 //  Created by Ryosuke Tamura on 2023/03/19.
@@ -7,6 +7,8 @@
 
 import UIKit
 
-protocol ChatMessage {
-    var sender: ChatSender { get }
+enum ChatSender {
+    case me
+    case character
+    case system
 }

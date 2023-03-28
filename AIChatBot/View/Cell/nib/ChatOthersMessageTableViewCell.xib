@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VL-Xj-q7n">
-                        <rect key="frame" x="12" y="12" width="260" height="63"/>
+                        <rect key="frame" x="12" y="12" width="172.66666666666666" height="63"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-17-Ikp">
                                 <rect key="frame" x="8" y="8" width="156.66666666666666" height="47"/>
@@ -34,12 +34,12 @@
                         <constraints>
                             <constraint firstItem="kJ6-17-Ikp" firstAttribute="top" secondItem="4VL-Xj-q7n" secondAttribute="top" constant="8" id="H9d-bo-cyb"/>
                             <constraint firstAttribute="bottom" secondItem="kJ6-17-Ikp" secondAttribute="bottom" constant="8" id="RcJ-Cn-sNS"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kJ6-17-Ikp" secondAttribute="trailing" constant="8" id="gRv-Q7-O37"/>
+                            <constraint firstAttribute="trailing" secondItem="kJ6-17-Ikp" secondAttribute="trailing" constant="8" id="gRv-Q7-O37"/>
                             <constraint firstItem="kJ6-17-Ikp" firstAttribute="leading" secondItem="4VL-Xj-q7n" secondAttribute="leading" constant="8" id="vFc-2j-gDH"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNx-ao-TFt">
-                        <rect key="frame" x="276" y="65" width="36" height="10"/>
+                        <rect key="frame" x="188.66666666666666" y="65" width="21" height="10"/>
                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -49,13 +49,18 @@
                     <constraint firstItem="eNx-ao-TFt" firstAttribute="leading" secondItem="4VL-Xj-q7n" secondAttribute="trailing" constant="4" id="152-yg-EYa"/>
                     <constraint firstItem="4VL-Xj-q7n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="3xT-rg-P9h"/>
                     <constraint firstItem="4VL-Xj-q7n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="ATO-Mq-2FM"/>
-                    <constraint firstAttribute="trailing" secondItem="eNx-ao-TFt" secondAttribute="trailing" constant="8" id="HXz-7W-ktO"/>
-                    <constraint firstAttribute="trailing" secondItem="4VL-Xj-q7n" secondAttribute="trailing" constant="48" id="L2a-rw-0Ro"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eNx-ao-TFt" secondAttribute="trailing" constant="8" id="HXz-7W-ktO"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4VL-Xj-q7n" secondAttribute="trailing" constant="48" id="L2a-rw-0Ro"/>
                     <constraint firstItem="eNx-ao-TFt" firstAttribute="bottom" secondItem="4VL-Xj-q7n" secondAttribute="bottom" id="inE-si-ZwS"/>
                     <constraint firstAttribute="bottom" secondItem="4VL-Xj-q7n" secondAttribute="bottom" constant="12" id="j7A-B8-Po4"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageBackgroundView" destination="4VL-Xj-q7n" id="r8H-k0-ykZ"/>
+                <outlet property="messageLabel" destination="kJ6-17-Ikp" id="vKF-aS-1J1"/>
+                <outlet property="timeLabel" destination="eNx-ao-TFt" id="jgi-x9-5gs"/>
+            </connections>
             <point key="canvasLocation" x="7.6335877862595414" y="-7.394366197183099"/>
         </tableViewCell>
     </objects>

@@ -9,9 +9,13 @@ import UIKit
 
 class ChatMyMessageTableViewCell: UITableViewCell {
 
+    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet var messageBackgroundView: UIView!
+    @IBOutlet var timeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        messageBackgroundView.clipCorner(radius: 8)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
