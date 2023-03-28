@@ -43,11 +43,18 @@ class ChatViewController: BaseViewController {
 
     override func fetch() {
         super.fetch()
-        viewModel.fetch()
     }
     
-    @IBAction func fetchButton(_ sender: Any) {
-        fetch()
+    @IBAction func sendButton(_ sender: Any) {
+        Task {
+            let message: String = self.inputMessageTextView.text
+            self.inputMessageTextView.text = ""
+            do{
+                try await self.viewModel.sendMessage(message: message)
+            }catch{
+                self.inputMessageTextView.text = "error"
+            }
+        }
     }
 }
 

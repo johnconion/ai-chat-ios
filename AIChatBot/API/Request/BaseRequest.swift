@@ -27,7 +27,7 @@ extension BaseRequest {
     }
     
     var baseURL: URL {
-        return URL(string: "https://crouton.tokyo/server/angousan/angousan_api.php")!
+        return URL(string: "http://localhost:8080")!
     }
     
     func asURLRequest() throws -> URLRequest {

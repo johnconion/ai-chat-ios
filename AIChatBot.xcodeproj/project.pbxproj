@@ -19,15 +19,15 @@
 		7C9F12CF29C36BCD0013F39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C9F12CD29C36BCD0013F39E /* LaunchScreen.storyboard */; };
 		7C9F12D729C36C9E0013F39E /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12D629C36C9E0013F39E /* ApiClient.swift */; };
 		7C9F12D929C36CD90013F39E /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12D829C36CD90013F39E /* BaseRequest.swift */; };
-		7C9F12DB29C36D070013F39E /* PostAngouRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DA29C36D070013F39E /* PostAngouRequest.swift */; };
-		7C9F12DD29C36D660013F39E /* AngouResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DC29C36D660013F39E /* AngouResponse.swift */; };
+		7C9F12DB29C36D070013F39E /* PostMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DA29C36D070013F39E /* PostMessageRequest.swift */; };
+		7C9F12DD29C36D660013F39E /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DC29C36D660013F39E /* MessageResponse.swift */; };
 		7C9F12DF29C36EB40013F39E /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12DE29C36EB40013F39E /* ChatViewModel.swift */; };
 		7C9F12E129C36F350013F39E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E029C36F350013F39E /* BaseViewModel.swift */; };
 		7C9F12E329C385530013F39E /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E229C385530013F39E /* ApiError.swift */; };
 		7C9F12E529C388BD0013F39E /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */; };
 		7C9F12EE29C44CF90013F39E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12ED29C44CF90013F39E /* BaseViewController.swift */; };
 		7C9F12F129C453320013F39E /* Extensons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12F029C453320013F39E /* Extensons.swift */; };
-		7C9F12F329C49DAE0013F39E /* AngouRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12F229C49DAE0013F39E /* AngouRepository.swift */; };
+		7C9F12F329C49DAE0013F39E /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F12F229C49DAE0013F39E /* MessageRepository.swift */; };
 		7CA9D55529C7365500667BB3 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA9D55429C7365500667BB3 /* ChatMessage.swift */; };
 		7CA9D55729C7366C00667BB3 /* ChatUserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA9D55629C7366C00667BB3 /* ChatUserMessage.swift */; };
 		7CA9D55929C7375100667BB3 /* ChatSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA9D55829C7375100667BB3 /* ChatSender.swift */; };
@@ -50,15 +50,15 @@
 		7C9F12D029C36BCD0013F39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9F12D629C36C9E0013F39E /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		7C9F12D829C36CD90013F39E /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
-		7C9F12DA29C36D070013F39E /* PostAngouRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAngouRequest.swift; sourceTree = "<group>"; };
-		7C9F12DC29C36D660013F39E /* AngouResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngouResponse.swift; sourceTree = "<group>"; };
+		7C9F12DA29C36D070013F39E /* PostMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageRequest.swift; sourceTree = "<group>"; };
+		7C9F12DC29C36D660013F39E /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
 		7C9F12DE29C36EB40013F39E /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		7C9F12E029C36F350013F39E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7C9F12E229C385530013F39E /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorResponse.swift; sourceTree = "<group>"; };
 		7C9F12ED29C44CF90013F39E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7C9F12F029C453320013F39E /* Extensons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensons.swift; sourceTree = "<group>"; };
-		7C9F12F229C49DAE0013F39E /* AngouRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngouRepository.swift; sourceTree = "<group>"; };
+		7C9F12F229C49DAE0013F39E /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
 		7CA9D55429C7365500667BB3 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		7CA9D55629C7366C00667BB3 /* ChatUserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUserMessage.swift; sourceTree = "<group>"; };
 		7CA9D55829C7375100667BB3 /* ChatSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSender.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		7C9F12E929C44B980013F39E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				7C9F12F229C49DAE0013F39E /* AngouRepository.swift */,
+				7C9F12F229C49DAE0013F39E /* MessageRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			children = (
 				7C9F12E229C385530013F39E /* ApiError.swift */,
 				7C9F12E429C388BD0013F39E /* ApiErrorResponse.swift */,
-				7C9F12DC29C36D660013F39E /* AngouResponse.swift */,
+				7C9F12DC29C36D660013F39E /* MessageResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				7C9F12D829C36CD90013F39E /* BaseRequest.swift */,
-				7C9F12DA29C36D070013F39E /* PostAngouRequest.swift */,
+				7C9F12DA29C36D070013F39E /* PostMessageRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -302,11 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA9D55529C7365500667BB3 /* ChatMessage.swift in Sources */,
-				7C9F12F329C49DAE0013F39E /* AngouRepository.swift in Sources */,
-				7C9F12DB29C36D070013F39E /* PostAngouRequest.swift in Sources */,
+				7C9F12F329C49DAE0013F39E /* MessageRepository.swift in Sources */,
+				7C9F12DB29C36D070013F39E /* PostMessageRequest.swift in Sources */,
 				7CA9D55929C7375100667BB3 /* ChatSender.swift in Sources */,
 				7C9F12D929C36CD90013F39E /* BaseRequest.swift in Sources */,
-				7C9F12DD29C36D660013F39E /* AngouResponse.swift in Sources */,
+				7C9F12DD29C36D660013F39E /* MessageResponse.swift in Sources */,
 				7C9F12E329C385530013F39E /* ApiError.swift in Sources */,
 				7C9F12C729C36BCB0013F39E /* ChatViewController.swift in Sources */,
 				7C9F12EE29C44CF90013F39E /* BaseViewController.swift in Sources */,

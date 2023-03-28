@@ -7,25 +7,22 @@
 
 import UIKit
 
-struct PostAngouRequest: BaseRequest {
-    typealias ResponseType = AngouResponse
+struct PostMessageRequest: BaseRequest {
+    typealias ResponseType = MessageResponse
     
-    let inputString: String
-    let encryptKey: String
+    let latestUserMessage: String
     
     var method: RequestMethod {
         return .post
     }
     
     var path: String {
-        return ""
+        return "conversations"
     }
     
     var data: [String:String]? {
         return [
-            "type": "encrypt",
-            "input_str": inputString,
-            "input_key": encryptKey
+            "latest_user_message": latestUserMessage
         ]
     }
 }
