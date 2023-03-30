@@ -9,20 +9,18 @@ import UIKit
 
 struct PostMessageRequest: BaseRequest {
     typealias ResponseType = MessageResponse
+    typealias RequestParams = PostMessageReequestParams
     
-    let latestUserMessage: String
+    var params: PostMessageReequestParams
     
-    var method: RequestMethod {
-        return .post
+    init(latestUserMessage: String) {
+        params = PostMessageReequestParams(latestUserMessage: latestUserMessage)
     }
     
-    var path: String {
-        return "conversations"
-    }
+    var method: RequestMethod = .post
+    var path: String = "conversations"
     
-    var data: [String:String]? {
-        return [
-            "latest_user_message": latestUserMessage
-        ]
+    struct PostMessageReequestParams: Codable {
+        let latestUserMessage: String
     }
 }
