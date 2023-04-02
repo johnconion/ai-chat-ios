@@ -12,6 +12,7 @@ protocol BaseRequest {
     associatedtype RequestParams: Codable
     var method: RequestMethod { get }
     var baseURL: URL { get }
+    var header: [String:String] { get }
     var path: String { get }
     var params: RequestParams { get }
 }
@@ -30,6 +31,20 @@ extension BaseRequest {
         return URL(string: "http://localhost:8080")!
     }
     
+    var header: [String:String] {
+#if DEBUG
+        let aiChatApiKey = "3e7931a0f68ac090c531f2f416fb130fa2db0001e0b68da0671ad537f30ef518"
+#else
+        let aiChatApiKey = ""
+#endif
+        return [
+            "AICHAT-API-KEY" : aiChatApiKey,
+            "AICHAT-USER-ID" : "temp_user_id",
+            "Content-Type" : contentType,
+            "Accept" : accept
+        ]
+    }
+    
     func asURLRequest() throws -> URLRequest {
         var compnents = URLComponents(url: baseURL.appendingPathComponent(self.path), resolvingAgainstBaseURL: true)!
         if method == .get {
@@ -37,8 +52,9 @@ extension BaseRequest {
         }
         var urlRequest = URLRequest(url: compnents.url!)
         urlRequest.httpMethod = self.method.rawValue
-        urlRequest.addValue(contentType, forHTTPHeaderField: "Content-Type")
-        urlRequest.addValue(accept, forHTTPHeaderField: "Accept")
+        header.forEach {
+            urlRequest.addValue($0.value, forHTTPHeaderField: $0.key)
+        }
         if let data = self.paramsToDict(params: params) {
             if self.method != .get {
                 urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
